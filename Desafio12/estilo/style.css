@@ -5,19 +5,32 @@
     padding: 0px;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kaushan+Script&family=Monsieur+La+Doulaise&family=Passion+One:wght@400;700;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kaushan+Script&family=Monsieur+La+Doulaise&family=Passion+One:wght@400;700;900&family=Sriracha&display=swap');
+
+:root{
+    --fonte1: verdana, Geneve, Tahoma, sans-serif;
+    --fonte2: "Passion One", sans-serif;
+    --fonte3:"Sriracha", cursive;
+    font-size: 1em;
+}
 html, body{
     min-height: 100vh;
     background-color: darkgray;
+    font-family: var(--fonte1);
 }
 
 header{
     background-color: black;
     color: white;
     text-align: center;
+    font-family: var(--fonte2);
 }
 header > h1{
     padding-top: 50px;
     font-variant: small-caps;
+    font-size: 10vw;
 }
 header > p{
     padding-bottom: 50px;
@@ -37,11 +50,14 @@ section{
     padding-bottom: 10vh;
     line-height: 2em;
     padding-left: 30px;
+    font-family: var(--fonte3);
+    font-size: 3.5vw;
 }
 
 section.imagem > p {
     background-color: rgba(0, 0, 0, 0.301);
-    width: 400px;
+    display: inline-block;
+    padding: 5px;
 }
 section.normal{
     background-color: white;
